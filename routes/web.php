@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('/world', function(){
     return 'Hello World!!';
 });
+
+Route::get('index', function(){
+    return view('index');
+});
+
+Route::get('navbar', function(){
+    return view('navbar');
+});
+
+Route::get('footer', function(){
+    return view('footer');
+});
