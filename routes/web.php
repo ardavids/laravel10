@@ -22,8 +22,9 @@ Route::get('/world', function(){
     return 'Hello World!!';
 });
 
-// Route::get('index', function(){
-//     return view('index');
-// });
+Route::get('index', function(){
+    return view('index');
+});
+
 
 Route::resource('siswa', SiswaController::class);
