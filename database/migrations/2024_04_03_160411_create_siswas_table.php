@@ -16,6 +16,7 @@ return new class extends Migration
             $table->integer('nis');
             $table->string('nama');
             $table->string('alamat'); 
+            $table->foreignId('sekolah_id')->constrained('sekolah')->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }
